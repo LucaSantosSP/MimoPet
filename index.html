@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MimoPet | O melhor para o seu pet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/main.css">
+  </head>
+<body>
+    <div style="position: fixed; width: 100%;">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="margin-left: 5%;"><img src="Imagens/Logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 2%">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" onclick="mostraAlerta()"><strong>Seja um entregador MimoPet</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="mostraAlerta()"><strong>Cadastre seu estabelecimento</strong></a>
+              </li>
+            
+            </ul>
+            <div class="d-flex" role="search" style="margin-right: 5%;">
+              <button class="btn btn-primary btnMimo" onclick="mostraAlerta()">Baixar o app</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="p1"></div>
+
+      <a id="subirP1" onclick="subirP1()" hidden="hidden" href="#p1"style="position: fixed; bottom:60px; right:10px;"><img style="width: 50px;" src="Imagens/SetaCima.png" alt=""></a>
+      <a id="subirP2" onclick="subirP2()" hidden="hidden" href="#p2"style="position: fixed; bottom:60px; right:10px;"><img style="width: 50px;" src="Imagens/SetaCima.png" alt=""></a>
+      <a id="subirP3" onclick="subirP3()" hidden="hidden" href="#p3"style="position: fixed; bottom:60px; right:10px;"><img style="width: 50px;" src="Imagens/SetaCima.png" alt=""></a>
+      <a id="subirP4" onclick="subirP4()" hidden="hidden" href="#p4"style="position: fixed; bottom:60px; right:10px;"><img style="width: 50px;" src="Imagens/SetaCima.png" alt=""></a>
+
+      <a id="descerP2" href="#p2" onclick="descerP2()" style="position: fixed; bottom:10px; right:10px;"><img style="width: 50px;" src="Imagens/SetaBaixo.png" alt=""></a>
+      <a hidden="hidden" id="descerP3" onclick="descerP3()" href="#p3" style="position: fixed; bottom:10px; right:10px;"><img style="width: 50px;" src="Imagens/SetaBaixo.png" alt=""></a>
+      <a hidden="hidden" id="descerP4" onclick="descerP4()" href="#p4" style="position: fixed; bottom:10px; right:10px;"><img style="width: 50px;" src="Imagens/SetaBaixo.png" alt=""></a>
+      <a hidden="hidden" id="descerP5" onclick="descerP5()" href="#p5" style="position: fixed; bottom:10px; right:10px;"><img style="width: 50px;" src="Imagens/SetaBaixo.png" alt=""></a>
+
+
+    <div class="alert alert-warning alert-dismissible fade show" id="alertHide" role="alert" style="position: fixed; width: 100%;">
+      <strong>Atenção!</strong> O MimoPet não é um produto real.
+      Esse site e todo o conteúdo contido nele foram criados pelos alunos de Sistemas para Internet como meio de exposição do trabalho pertinente a matéria de Negócios e Marketing Eletrônicos.
+      <button type="button" class="btn-close" onclick="escondeAlerta()"></button>
+    </div>
+
+      <div class="centro" style="padding-top: 200px;"> 
+        <img src="Imagens/Pets.png" alt="Imagem de vários animais domésticos reunidos" style="display: block; margin: 0px auto; margin-top: 10px; width: 30%;">
+        <h1 style="text-align: center; margin-top: 10px; font-size: 30px;">O melhor para o seu pet a um clique de distância</h1>
+        <p style="text-align: center; width: 600px; display: block; margin: 0px auto; margin-top: 10px;">Com o MimoPet você pode fazer pedidos de rações e artigos para seu companheiro nos melhores pet shops da sua região sem sair de casa.</p>
+        <p style="text-align: center; width: 700px; display: block; margin: 0px auto;">O que você está esperando? Baixe o aplicativo e experimente.</p>
+        <p style="text-align: center; font-size: 17px;"><strong>A primeira entrega é grátis. </strong></p>
+        <div class="d-flex" role="search" style="margin-right: 5%; display: block; margin: 0px auto; margin-top: 10px;">
+          <button class="btn btn-primary btnMimo" style="font-size: 20px;" onclick="mostraAlerta()">Baixar o app</button>
+        </div>
+      </div>
+
+      <div id="p2"></div>
+
+      <div class="centro" style="margin-top: 150px; margin-bottom: 500px;"> 
+        <h2 style="text-align: center;">Os melhores pet shops</h2>
+        <div class="d-flex justify-content-center" style="margin-top: 40px;">
+          <img class="cardLoja" src="Imagens/PetShop1.png" alt="Card apresentando o PetShop chamado PetZero." style="width: 20%;" onclick="mostraAlerta()">
+          <img class="cardLoja" src="Imagens/PetShop2.png" alt="Card apresentando o PetShop chamado Gacinha PetShop."style="margin-left: 2%; width: 20%;" onclick="mostraAlerta()">
+          <img class="cardLoja" src="Imagens/PetShop3.png" alt="Card apresentando o PetShop chamado Pet Farra."style="margin-left: 2%; width: 20%;" onclick="mostraAlerta()">
+        </div>
+        <div class="d-flex justify-content-center" style="margin-top: 40px;">
+          <img src="Imagens/FreteGratis.png" alt="" style="width: 31%;">
+          <img src="Imagens/MelhorPet.png" alt="" style="margin-left: 2%; width: 31%;">
+        </div>
+      </div>
+
+      <div id="p3"style="margin-bottom: 100px; color: white;">ancora</div>
+
+      <div class="centro" style="margin-bottom: 500px;"> 
+        <div class="d-flex justify-content-center">
+          <img src="Imagens/CadastrarPetshopIMG.png" alt="Amplie seus negócios. Cadestre seu PetShop na MimoPet." style="width: 40%;">
+          <div class="cardProp" style="padding-left: 50px; padding-top: 15%;">
+            <h3 style="padding-bottom: 10%;">Amplie seus negócios</h3>
+            <p style="padding-bottom: 10%;">Cadastre seu PetShop na MimoPet.</p>
+            <div class="d-flex" role="search" style="margin-right: 5%; display: block; margin: 0px auto; margin-top: 10px;">
+              <button class="btn btn-primary btnMimo" style="font-size: 20px;" onclick="mostraAlerta()">Saiba mais</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="p4"style="margin-bottom: 100px; color: white;">ancora</div>
+
+      <div class="centro" style="margin-bottom: 500px;"> 
+        <div class="d-flex justify-content-center">
+          <div class="cardProp" style="padding-left: 50px; padding-top: 15%;">
+            <h3 style="padding-bottom: 10%;">Quer fazer entregas pelo MimoPet?</h3>
+            <p style="padding-bottom: 10%;">Ganhe dinheiro extra fazendo entregas.</p>
+            <div class="d-flex" role="search" style="margin-right: 5%; display: block; margin: 0px auto; margin-top: 10px;">
+              <button class="btn btn-primary btnMimo" style="font-size: 20px;" onclick="mostraAlerta()">Saiba mais</button>
+            </div>
+          </div>
+          <img src="Imagens/Entregador.png" alt="Homem segurando pacote para entrega." style="width: 40%;">          
+        </div>
+      </div>
+
+      <div id="p5" class="centro" style="margin-bottom: 30px;"> 
+        <img src="Imagens/atencao.png" alt="Atenção! O MimoPet não é um produto real. Esse site e todo o conteúdo contido nele foram criados pelos alunos de Sistemas para Internet como meio de exposição do trabalho pertinente a matéria de Negócios e Marketing Eletrônicos." 
+        style="width: 60%; margin: 0px auto; margin-top: 10px;">
+      </div>
+
+
+      <div class="centro" style="margin-bottom: 50px;"> 
+        <img src="Imagens/Divisor.png" alt="" style="width: 100%;margin: 0px auto; margin-top: 10px;">
+      </div>
+
+      <div class="d-flex justify-content-center" style="margin-bottom: 50px;">
+        <div style="margin-right: 12%;">
+          <img src="Imagens/Logo.png" alt="Logo">
+        </div>
+        <div style="margin-right: 3%;">
+          <p style="font-size: 20px; color: #424242;"><strong>Seja nosso parceiro</strong></p>
+          <a style="color: #424242;" class="nav-link cardLoja" onclick="mostraAlerta()">Seja um entregador MimoPet</a>
+          <a style="color: #424242;" class="nav-link cardLoja" onclick="mostraAlerta()">Adicionar seu negócio no MimoPet</a>
+        </div>
+        <div style="margin-right: 3%;">
+          <p style="font-size: 20px; color: #424242;"><strong>Mais informações</strong></p>
+          <a style="color: #424242;" class="nav-link cardLoja" onclick="mostraAlerta()">Sobre o MimoPet</a>
+        </div>
+        <div>
+          <p style="font-size: 20px; color: #424242;"><strong>Social</strong></p>
+          <a href="https://www.instagram.com/loja_mimopet/" target="_blank"><img src="Imagens/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+      
+      
+
+    <script>
+      function escondeAlerta(){
+        document.getElementById("alertHide").hidden = true;
+      }
+
+      function mostraAlerta(){
+        document.getElementById("alertHide").hidden = false;
+      }
+
+
+      //Functions para SUBIR
+
+      function subirP4(){
+        document.getElementById("subirP4").hidden = true;
+        document.getElementById("subirP3").hidden = false;
+        document.getElementById("descerP5").hidden = false;
+      }
+
+      function subirP3(){
+        document.getElementById("subirP3").hidden = true;
+        document.getElementById("subirP2").hidden = false;
+        document.getElementById("descerP4").hidden = false;
+        document.getElementById("descerP5").hidden = true;
+      }
+
+      function subirP2(){
+        document.getElementById("subirP2").hidden = true;
+        document.getElementById("subirP1").hidden = false;
+        document.getElementById("descerP3").hidden = false;
+        document.getElementById("descerP4").hidden = true;
+      }
+
+      function subirP1(){
+        document.getElementById("subirP1").hidden = true;
+        document.getElementById("descerP2").hidden = false;
+        document.getElementById("descerP3").hidden = true;
+      }
+
+      //Functions para DESCER
+
+      function descerP2(){
+        document.getElementById("subirP1").hidden = false;
+        document.getElementById("descerP2").hidden = true;
+        document.getElementById("descerP3").hidden = false;
+      }
+
+      function descerP3(){
+        document.getElementById("subirP1").hidden = true;
+        document.getElementById("subirP2").hidden = false;
+        document.getElementById("descerP3").hidden = true;
+        document.getElementById("descerP4").hidden = false;
+      }
+
+      function descerP4(){
+        document.getElementById("subirP2").hidden = true;
+        document.getElementById("subirP3").hidden = false;
+        document.getElementById("descerP4").hidden = true;
+        document.getElementById("descerP5").hidden = false;
+      }
+
+      function descerP5(){
+        document.getElementById("subirP3").hidden = true;
+        document.getElementById("subirP4").hidden = false;
+        document.getElementById("descerP5").hidden = true;
+      }
+
+
+      function escondeBtnOn(){
+        console.log("function called...");
+        subirP1.hidden = true;
+      }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
