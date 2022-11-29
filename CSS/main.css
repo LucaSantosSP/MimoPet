@@ -42,3 +42,80 @@ body{
     border-radius: 13px;
     width: 400px;
 }
+
+.imgPrincipal{
+    display: block; 
+    margin: 0px auto; 
+    margin-top: 10px; 
+    width: 30%;
+}
+
+.textFormat{
+    text-align: center; width: 600px; display: block; margin: 0px auto; margin-top: 10px;
+}
+
+.textFormat2{
+    text-align: center; width: 700px; margin: 0px auto;
+}
+
+.textFormat3{
+    text-align: center; font-size: 17px;
+}
+
+.mBottom{
+    margin-bottom: 0px;;
+}
+
+@media only screen and (max-device-width: 900px) {
+    .imgPrincipal{
+        display: block; margin: 0px auto; margin-top: 0px; width: 100%;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    .centro{
+        padding-top: 100px !important;
+        margin-bottom: 0px !important;
+        border-top: solid #482469 1px;
+    }
+
+    .h1Centro{
+        font-size: 26px !important;
+    }
+
+    .textFormat, .textFormat2, .textFormat3{
+        text-align: center; width: 100%; display: block; margin: 1px; font-size: 14px; padding: 3px;
+    }
+
+    body{
+        overflow:auto;
+    }
+
+    .cardLoja{
+        width: 200px !important;
+        margin: 10px
+    }
+
+    .cardLoja2{
+        width: 250px !important;
+        margin: 10px
+    }
+
+    .tiraFlex{
+        display: block !important; text-align: center; margin: 0px auto;
+    }
+
+    .mBottom{
+        margin-bottom: 0;
+    }
+
+    #descerP2{
+        display: none;
+    }
+
+    #p2{
+        display: none;
+    }
+}
